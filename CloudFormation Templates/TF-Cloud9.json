@@ -1,0 +1,19 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "TFCloud9": {
+            "Type": "AWS::Cloud9::EnvironmentEC2",
+            "Properties": {
+                "AutomaticStopTimeMinutes": 60,
+                "ConnectionType": "CONNECT_SSH",
+                "Description": "Terraform Lab Cloud9 Enviroment",
+                "ImageId": "amazonlinux-1-x86_64",
+                "InstanceType": "t2.micro",
+                "Name": "Terraform Cloud9",
+                "OwnerArn": "arn:aws:iam::212892117339:user/LabUser"
+            }
+        }
+    }
+}
+
+
